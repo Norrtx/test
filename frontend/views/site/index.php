@@ -9,7 +9,7 @@ $this->title = 'AT Creative';
    
 
     <div class="jumbotron">
-        <h1>JOJO!</h1>
+        <h1>FFF!</h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 

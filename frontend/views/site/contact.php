@@ -4,47 +4,37 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \frontend\models\ContactForm */
 
+use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 $this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="site-contact">
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-    </p>
-
-    <div class="row">
-        <div class="col-lg-5">
-            <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-
-                <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-
-                <?= $form->field($model, 'email') ?>
-
-                <?= $form->field($model, 'subject') ?>
-
-                <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
-
-                <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                    'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                ]) ?>
-
-                <div class="form-group">
-                    <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-                </div>
-
-            <?php ActiveForm::end(); ?>
-        </div>
-    </div>
-
-</div>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">ที่อยู่</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            725 ม.6 ต.ท่าตะโก อ.ท่าตะโก จ.นครสวรรค์ 60160</li>
+            <i class="fa-li fa fa-trophy text-warning">โทร 0631896197</i>
+           
+          </ul>
+     
+        <div class="col-xs-12"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m25!1m11!1m3!1d153.16493011844327!2d100.48403114998126!3d15.6323078235334!2m2!1f43.61190450476259!2f45!3
+          m2!1i1024!2i768!4f35!4m11!3e0!4m3!3m2!1d15.6335318!2d100.485044!4m5!1s0x30e02e103bd41685%3A0x404fb54b009c2d0!2sTha%20Tako%2C%20Tha%20Tako%20District%2C%20
+          Nakhon%20Sawan%2060160!3m2!1d15.6361001!2d100.4733789!5e1!3m2!1sen
+          !2sth!4v1573721735088!5m2!1sen!2sth" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+      
+      </div>
 <!-- Contact -->
-<section class="page-section" id="contact">
+<!-- <section class="page-section" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -86,4 +76,4 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
       </div>
     </div>
-  </section>
+  </section> -->

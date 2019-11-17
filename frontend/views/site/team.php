@@ -1,3 +1,10 @@
+<?php
+
+/* @var $this yii\web\View */
+
+$this->title = 'Team';
+?>
+<div class="site-team">
 <!-- Team -->
 <section class="bg-light page-section" id="team">
     <div class="container">

@@ -1,7 +1,7 @@
  <?php
- 
+ use yii\helpers\Url;
 $this->title = 'Port';
-$this->params['breadcrumbs'][] = $this->title;
+
  ?>
  
  <!-- Portfolio Grid -->
@@ -63,11 +63,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="<?=Url::to(['img/profile.jpg']);?>" alt="" style="width:100%;">
           </a>
           <div class="portfolio-caption">
             <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+            <p class="text-muted">Branding2</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
